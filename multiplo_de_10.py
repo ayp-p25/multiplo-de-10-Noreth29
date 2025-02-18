@@ -1,15 +1,19 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Múltiplo de 10
 """
-
 # Declaraciones
-CONSTANTE = valor
+try:
 
 # Entradas
-entrada = input()
+    numero = int(input("Introduce numero "))
 
 # Proceso
+    if numero % 10 == 0:
+        print("El número " + str(numero) + " sí es múltiplo de 10")
 
+    else: 
+        print("El número " + str(numero) + " no es múltiplo de 10")
 
-# Salidas
-print(salida)
+except ValueError:
+    print("Error. Introduce un valor válido.")
+# Salida
